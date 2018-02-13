@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="sanchaez" fetch="https://github.com/sanchaez" />
+  <remote name="hexchat" fetch="https://github.com/hexchat" />
+  <remote name="intel" fetch="https://github.com/01org" />
+
+  <default remote="sanchaez"
+           revision="master"
+           sync-j="4" />
+
+  <project path="sanchaez/network-sniff-linux"
+           name="network-sniff-linux.git" />
+  <project path="hexchat/hexchat"
+           name="hexchat.git"
+           remote="hexchat"
+           revision="refs/tags/v2.12.4" />
+
+  <project path="01org/tbb"
+           name="tbb.git"
+           remote="intel"
+           revision="4c73c3b5d7" />
+
+</manifest>
