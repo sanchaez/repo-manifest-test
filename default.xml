@@ -1,21 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="sanchaez" fetch="https://github.com/sanchaez" />
-  <remote name="hexchat" fetch="https://github.com/hexchat" />
-  <remote name="intel" fetch="https://github.com/01org" />
-
-  <default remote="sanchaez"
-           revision="master"
-           sync-j="4" />
-
-  <project path="sanchaez/network-sniff-linux"
-           name="network-sniff-linux.git" />
-  <project path="hexchat/hexchat"
-           name="hexchat.git"
-           remote="hexchat"
-           revision="refs/tags/v2.12.4" />
-  <project path="01org/tbb"
-           name="tbb.git"
-           remote="intel"
-           revision="4c73c3b5d7f78c40f69e0c04fd4afb9f48add1e6" />
+  <remote fetch="https://github.com/hexchat" name="hexchat"/>
+  <remote fetch="https://github.com/01org" name="intel"/>
+  <remote fetch="https://github.com/sanchaez" name="sanchaez"/>
+  
+  <default remote="sanchaez" revision="master" sync-j="4"/>
+  
+  <project name="hexchat.git" path="hexchat/hexchat" remote="hexchat" revision="02c92599faa8adbe8710177f943c3ca3cb4a65d9" upstream="refs/tags/v2.12.4"/>
+  <project name="network-sniff-linux.git" path="sanchaez/network-sniff-linux" revision="c17c0194586958a9aa66f23c5c51f72cc85253e1" upstream="master"/>
+  <project name="tbb.git" path="01org/tbb" remote="intel" revision="e8849f701b4c4c162142f87540b6b821044acfb4" upstream="4c73c3b5d7f78c40f69e0c04fd4afb9f48add1e6"/>
 </manifest>
