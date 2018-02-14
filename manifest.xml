@@ -14,10 +14,8 @@
            name="hexchat.git"
            remote="hexchat"
            revision="refs/tags/v2.12.4" />
-
   <project path="01org/tbb"
            name="tbb.git"
            remote="intel"
            revision="4c73c3b5d7f78c40f69e0c04fd4afb9f48add1e6" />
-
 </manifest>
